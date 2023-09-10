@@ -1,0 +1,30 @@
+Started by user [8mha:////4ChZmUtad9HPyYMaoZ69kc6lwI8L0vjPOaIGSN2TaB5sAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[Tue Apr 11 17:28:00 UTC 2023] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote --symref -- file://${GITHUB_WORKSPACE}/.tmp-test/.git # timeout=10
+Creating git repository in /var/jenkins_home/caches/git-ab495b1dcab40cf4fac274cfe60fb804
+ > git init /var/jenkins_home/caches/git-ab495b1dcab40cf4fac274cfe60fb804 # timeout=10
+Setting origin to file://${GITHUB_WORKSPACE}/.tmp-test/.git
+ > git config remote.origin.url file://${GITHUB_WORKSPACE}/.tmp-test/.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- file:///workspace/.tmp-test/.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch develop
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: develop
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: main
+Processed 2 branches
+[Tue Apr 11 17:28:00 UTC 2023] Finished branch indexing. Indexing took 0.33 sec
+Finished: SUCCESS
