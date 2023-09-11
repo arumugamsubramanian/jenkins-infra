@@ -21,8 +21,7 @@ def call(Map body = [:]) {
                     script {
                         try {
                             withCredentials([usernamePassword(credentialsId: 'jira-username-api-token-for-jenkins-int', passwordVariable: 'JIRA_API_TOKEN', usernameVariable: 'JIRA_USER')]) {
-                                def slackMessage = sh(script: "cxl-release-notes get-changelog --jira-username \$JIRA_USER --jira-api-token \$JIRA_API_TOKEN --repository \"${env.WORKSPACE}\" --branch \"origin/${env.BRANCH_NAME}\" --project-version 1.0.0", returnStdout: true)
-                                echo "inside=$slackMessage"
+
                             }
                             CommonUtils.printLog(this, 'arumugam')
                         } catch (e) {
